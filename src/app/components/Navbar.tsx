@@ -1,11 +1,16 @@
 import Link from 'next/link';
-import React from 'react';
 
+interface Items{
+    id: string,
+    slug: string,
+    nameBn: string,
+    icon:string
+}
 const Navbar =async () => {
 
     const res = await fetch("https://api.abcz.workers.dev/api/bazardor/categories")
 
-    const data = await res.json();
+    const data:Items[] = await res.json();
     console.log(data)
 
     return (
