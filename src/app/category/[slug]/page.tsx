@@ -1,6 +1,6 @@
 export const instant = false;
 import Link from "next/link";
-import { FaArrowDown, FaArrowUp, FaPercentage } from "react-icons/fa";
+import { FaArrowDown, FaArrowUp, FaBackward, FaPercentage } from "react-icons/fa";
 
 interface Product {
     id: number;
@@ -130,6 +130,10 @@ const CategoryPage = async ({
                 </div>
             )}
         </section>
+         <Link href="/" className='m-10 flex items-center gap-2 text-green-500'>
+                <h2>হোম</h2>
+                <FaBackward />
+            </Link>
        </main>
     );
 };

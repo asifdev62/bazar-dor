@@ -1,5 +1,6 @@
 import Image from 'next/image';;
 import BanglaDate from './BanglaDate';
+import Link from 'next/link';
 
 const Banner =async () => {
    
@@ -17,7 +18,9 @@ const Banner =async () => {
                 <p className='text-gray-600 text-sm leading-7 sm;text-base'>চাল, ডাল, তেল, সবজি, মাছ, মাংস, ডিম ও মসলার দাম — বাজারভিত্তিক বিস্তারিত, গড়, <br />সর্বনিম্ন-সর্বাধিক এবং দামের পরিবর্তন এক জায়গায়।</p>
 
 
-                <button className='bg-green-600 rounded-md text-white px-5 py-2 font-semibold text-sm mt-5 transition hover:bg-green-700 sm:text-base'>সব পণ্য দেখুন</button>
+               
+                <Link href="/products" className='bg-green-600 rounded-md text-white px-5 py-2 font-semibold text-sm mt-5 transition hover:bg-green-700 sm:text-base'>সব পণ্য দেখুন</Link>
+            
                 </div>
 
             <div className='w-full max-w-60 shrink-0 sm:max-w-75 md:w-2/5 md:max-w-none'>
