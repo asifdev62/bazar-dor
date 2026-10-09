@@ -7,7 +7,7 @@ import AllProduct from "./components/products/AllProduct";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-green-50">
      <Suspense>
        <Marque />
       <Banner />

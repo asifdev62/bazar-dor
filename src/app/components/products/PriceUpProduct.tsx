@@ -1,10 +1,13 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaArrowUp, FaPercentage } from 'react-icons/fa';
 
 interface Product {
     id: string,
     category: string,
+    slug:string,
     today: string,
+    nameBn: string,
     image: string,
     unit: string,
     change: {
@@ -28,6 +31,7 @@ const PriceUpProduct = async () => {
             <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
 
                 {products.filter((product) => product.change.dir === "up").slice(0, 6).map((product) => (
+                    <Link key={product.slug} href={`/product/${product.slug}`}>
                     <div key={product.id}>
                         <div className="w-full rounded-6  bg-gray-50 border-b border-green-500 p-2 shadow-sm">
                            
@@ -38,24 +42,24 @@ const PriceUpProduct = async () => {
 
                                 <div>
                                     <h3 className="text-xl font-bold text-gray-800">
-                                        {product.category}
+                                        {product.nameBn}
                                     </h3>
                                     <p className="mt-1 text-base text-gray-700">
-                                        {product.unit}
+                                        প্রতি কেজি
                                     </p>
                                 </div>
                             </div>
 
                             
                             <div className="mt-5  items-end justify-between gap-3">
-                                <h3>Today price</h3>
+                                <h3>আজকের দাম</h3>
                                 <div className='flex justify-between items-center gap-2'>
                                     <div className='flex items-center gap-2'>
                                           <p className="text-base text-gray-800 font-bold">
                                      {product.today}
                                     </p>
-                                    <h3 className="mt-1  font-semibold text-sm[#202820]">
-                                        TK
+                                    <h3 className="mt-1  font-semibold text-sm">
+                                        টাকা
                                     </h3>
                                     </div>
                                      <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-red-500">
@@ -69,6 +73,7 @@ const PriceUpProduct = async () => {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 ))}
             </div>
         </div>

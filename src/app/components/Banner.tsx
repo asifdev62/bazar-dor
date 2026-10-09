@@ -6,8 +6,8 @@ const Banner =async () => {
     return (
        <div className='px-4 py-6 sm:py-8 lg:px-15 lg:py-10'>
 
-         <div className='flex flex-col items-center justify-between gap-6 rounded-xl bg-green-50 px-5 py-6 sm:px-8 md:flex-row md:gap-8 lg:px-10'>
-            <div className='w-full space-y-4 text-center md:w-3/5 md:text-left'>
+         <div className='flex flex-col items-center justify-between gap-6 rounded-xl bg-gray-50 px-5 py-6 sm:px-8 md:flex-row md:gap-8 lg:px-10 border border-gray-300'>
+            <div className='w-full space-y-4 text-center md:w-3/5 md:text-left '>
                 
                 <span className='inline-block text-green-600 bg-green-100 rounded-lg text-sm px-3 py-2' ><BanglaDate /></span>
 
