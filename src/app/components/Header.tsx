@@ -1,10 +1,12 @@
 
 import Image from "next/image";
 import Navbar from "./Navbar";
+import { connection } from "next/server";
 
 
 
-const Header = () => {
+const Header =async () => {
+  await connection();
 
   const date = new Date().toLocaleDateString("bn-BD", {
     dateStyle: "full"

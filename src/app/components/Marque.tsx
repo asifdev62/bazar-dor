@@ -6,11 +6,23 @@ import {
   FiTrendingDown,
   FiMinus,
 } from "react-icons/fi";
+
+interface Headline{
+    nameBn:string,
+    id:string,
+    today:string,
+    unit:string,
+    change:{
+         pct: string,
+          dir:string
+    }
+         
+}
 const Marque = async () => {
 
     const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
 
-    const headlines = await res.json();
+    const headlines:Headline[] = await res.json();
     console.log(headlines)
     return (
         <div className=" w-full overflow-hidden border-y border-gray-200 bg-white">
