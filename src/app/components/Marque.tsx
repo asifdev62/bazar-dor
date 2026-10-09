@@ -12,6 +12,7 @@ interface Headline{
     id:string,
     today:string,
     unit:string,
+    category:string,
     change:{
          pct: string,
           dir:string
@@ -38,7 +39,7 @@ const Marque = async () => {
                         <div key={headline.id}
                         className="flex shrink-0 items-center gap-1.5 whitespace-nowrap text-xs sm:gap-2 sm:text-sm">
                             
-                            <span className="font-semibold text-gray-800">{headline.nameBn}</span>
+                            <span className="font-semibold text-gray-800">{headline.category}</span>
 
                              <span className="flex items-center font-bold text-gray-900">
                                     <TbCurrencyTaka

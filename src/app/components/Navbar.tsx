@@ -19,7 +19,7 @@ const Navbar =async () => {
             {
                 data.map(item => <Link key={item.id} href={item.slug} className='flex shrink-0 items-center gap-1 whitespace-nowrap text-sm font-medium text-gray-700 transition hover:text-green-500 sm:text-base py-1'>
                     <span>{item.icon}</span>
-                    <span>{item.nameBn}</span>
+                    <span>{item.slug}</span>
 
                     </Link>)
             }
