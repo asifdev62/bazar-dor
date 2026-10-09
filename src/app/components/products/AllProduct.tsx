@@ -1,5 +1,5 @@
  import React from 'react';
- import { FaArrowDown, FaPercentage } from 'react-icons/fa';
+ import { FaArrowDown, FaArrowUp, FaPercentage } from 'react-icons/fa';
  
  interface Product {
      id: string,
@@ -12,7 +12,7 @@
          pct: string
      }
  }
- const PriceDownProduct = async () => {
+ const AllProduct = async () => {
  
      const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
  
@@ -20,14 +20,14 @@
      console.log(products)
      return (
          <div className='px-15'>
-             <div className='flex items-center gap-2 mt-15'>
-                 <FaArrowDown className='text-green-500' />
-                 <h2 className='text-xl font-bold text-gray-800 py-5'>আজ দাম কমেছে</h2>
+             <div className='mt-15'>
+                 <h2 className='text-2xl font-bold text-gray-800'>সব পণ্য</h2>
+                 <p className='text-sm text-gray-500 mb-5'>মোট {products.length} পণ্য দেখানো হচ্ছে</p>
              </div>
  
              <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
  
-                 {products.filter((product) => product.change.dir === "down").slice(0, 6).map((product) => (
+                 {products.map((product) => (
                      <div key={product.id}>
                          <div className="w-full rounded-6  bg-green-50 p-2 shadow-sm">
                             
@@ -58,11 +58,16 @@
                                          TK
                                      </h3>
                                      </div>
-                                      <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-green-100 px-3 py-2 text-sm font-semibold text-green-600">
+                                    {product.change.dir === "up" ? ( <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-green-100 px-3 py-2 text-sm font-semibold text-red-600">
+                                     <FaArrowUp />
+                                     <span>{product.change.pct}</span>
+                                     <FaPercentage />
+                                 </div>) : (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-green-100 px-3 py-2 text-sm font-semibold text-green-600">
                                      <FaArrowDown />
                                      <span>{product.change.pct}</span>
                                      <FaPercentage />
                                  </div>
+                                 )}
                                  </div>
  
                                 
@@ -75,4 +80,4 @@
      );
  };
  
- export default PriceDownProduct;
+ export default AllProduct;
