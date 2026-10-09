@@ -17,12 +17,12 @@ import React from 'react';
  }
  const AllProduct = async () => {
  
-     const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
+     const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products")
  
      const products: Product[] = await res.json();
      console.log(products)
      return (
-         <div className='px-15'>
+         <div className='m-15'>
              <div className='mt-15'>
                  <h2 className='text-2xl font-bold text-gray-800'>সব পণ্য</h2>
                  <p className='text-sm text-gray-500 mb-5'>মোট {products.length} পণ্য দেখানো হচ্ছে</p>

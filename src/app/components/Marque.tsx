@@ -21,7 +21,7 @@ interface Headline{
 }
 const Marque = async () => {
 
-    const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
+    const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products")
 
     const headlines:Headline[] = await res.json();
     console.log(headlines)

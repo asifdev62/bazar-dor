@@ -16,7 +16,7 @@ import React from 'react';
  }
  const PriceDownProduct = async () => {
  
-     const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
+     const res = await fetch("https://api.api-store.workers.dev/api/bazardor/products")
  
      const products: Product[] = await res.json();
      console.log(products)
