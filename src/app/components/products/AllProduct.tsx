@@ -25,14 +25,14 @@
                  <p className='text-sm text-gray-500 mb-5'>মোট {products.length} পণ্য দেখানো হচ্ছে</p>
              </div>
  
-             <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
+             <div className='grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 '>
  
                  {products.map((product) => (
-                     <div key={product.id}>
-                         <div className="w-full rounded-6  bg-green-50 p-2 shadow-sm">
+                     <div className=' border-b border-green-500 bg-gray-50' key={product.id}>
+                         <div className="w-full rounded-6 p-2 shadow-sm">
                             
                              <div className="flex items-center gap-4">
-                                 <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-[20px] bg-green-100 text-4xl">
+                                 <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-[20px] bg-white text-4xl">
                                      {product.image}
                                  </div>
  
@@ -58,11 +58,11 @@
                                          TK
                                      </h3>
                                      </div>
-                                    {product.change.dir === "up" ? ( <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-green-100 px-3 py-2 text-sm font-semibold text-red-600">
+                                    {product.change.dir === "up" ? ( <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-red-600">
                                      <FaArrowUp />
                                      <span>{product.change.pct}</span>
                                      <FaPercentage />
-                                 </div>) : (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-green-100 px-3 py-2 text-sm font-semibold text-green-600">
+                                 </div>) : (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-green-600">
                                      <FaArrowDown />
                                      <span>{product.change.pct}</span>
                                      <FaPercentage />
