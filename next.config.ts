@@ -13,8 +13,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "encrypted-tbn0.gstatic.com",
-        pathname: "/images/**",
+       hostname: "lh3.googleusercontent.com",
+        pathname: "/a/**",
       },
     ],
   },

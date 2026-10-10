@@ -24,9 +24,9 @@ const UserInfo = () => {
                                     <Image
                                         src={user.image}
                                         alt="Profile"
-                                        width={60}
-                                        height={60}
-                                        className="h-28 w-28 rounded-full object-cover"
+                                        width={96}
+                                        height={96}
+                                        className="h-full w-full rounded-full object-cover"
                                     />
                                 ) : (
                                     <div className="flex h-28 w-28 items-center justify-center rounded-full bg-green-100">

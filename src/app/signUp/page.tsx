@@ -3,7 +3,8 @@
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { FaUser, FaEnvelope, FaPhone, FaLock, FaArrowRight } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhone, FaLock, FaArrowRight, FaGithub } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 
@@ -45,6 +46,13 @@ const SignUp = () => {
         }
 
     }
+
+    const handleGooleSignUp = async () =>{
+       const data = await authClient.signIn.social({
+    provider: "google",
+  });
+  console.log(data)
+    }
     return (
         <main className="flex min-h-screen items-center justify-center bg-green-50 px-5 py-10">
 
@@ -53,7 +61,6 @@ const SignUp = () => {
 
                 <div className="rounded-3xl border border-green-100 bg-white p-5 shadow-xl shadow-green-900/10 sm:p-8">
 
-                    {/* Header */}
                     <div className="mb-7 text-center">
                         <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-600 text-3xl">
                             <Image src="/logo-icon.png"
@@ -73,7 +80,6 @@ const SignUp = () => {
 
                     <form onSubmit={onSubmit} className="space-y-4">
 
-                        {/* Name */}
                         <div>
                             <label className="mb-2 block text-sm font-semibold text-gray-700">
                                 আপনার নাম
@@ -93,7 +99,7 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        {/* Email */}
+                    
                         <div>
                             <label className="mb-2 block text-sm font-semibold text-gray-700">
                                 ইমেইল অ্যাড্রেস
@@ -154,7 +160,6 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        {/* Submit */}
                         
                         <button
                             type="submit"
@@ -167,7 +172,7 @@ const SignUp = () => {
 
                     </form>
 
-                    {/* Footer */}
+                 
                     <p className="mt-6 text-center text-sm text-gray-500">
                         ইতিমধ্যে অ্যাকাউন্ট আছে?{" "}
                         <a
@@ -177,6 +182,25 @@ const SignUp = () => {
                             লগইন করুন
                         </a>
                     </p>
+
+                    <div className="flex items-center gap-5 my-2">
+                        <div className="flex-1 border-t border-gray-300"></div>
+                        <p className="text-sm text-gray-400">অথবা</p>
+                        <div className="flex-1 border-t border-gray-300"></div>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                        <button onClick={handleGooleSignUp} className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-2 hover:bg-gray-50 transition">
+                            <FcGoogle />
+                        <span>Google দিয়ে চালিয়ে যান</span>
+
+                        </button>
+                        <button className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-2 hover:bg-gray-50 transition">
+                            <FaGithub />
+                        <span>GitHub দিয়ে চালিয়ে যান</span>
+
+                        </button>
+                    </div>
                 </div>
 
                 <p className="mt-5 text-center text-xs text-gray-400">
