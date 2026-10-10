@@ -15,7 +15,7 @@ const Header =async () => {
   })
 
   return (
-    <header className="w-full min-w-0 px-3 sm:px-5 md:px-6 lg:px-10 xl:px-20">
+    <header className="w-full px-3 sm:px-5 md:px-6 lg:px-10 xl:px-20">
 
       <div className="flex main-w-0 items-center justify-between gap-2 py-3 sm:gap-3 sm:py-4">
 

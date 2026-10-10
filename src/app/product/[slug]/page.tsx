@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { FaArrowDown, FaArrowRight, FaArrowUp, FaPercentage } from "react-icons/fa";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 export const instant = false;
 
 interface Market {
-    marketName: string;
+    market: string;
     division: string;
     min: number;
     max: number;
@@ -77,7 +78,7 @@ const ProductDetails = async ({
         <main className="min-h-screen bg-green-50 px-3 py-6 text-gray-800 sm:px-6 lg:px-10">
             <div className="mx-auto max-w-5xl">
 
-            
+
                 <div className="mb-5 flex flex-wrap items-center gap-2 text-xs text-gray-500">
                     <Link href="/" className="hover:text-green-700">
                         হোম
@@ -141,7 +142,7 @@ const ProductDetails = async ({
                         </p>
 
                         <p className="text-2xl font-bold">
-                            ৳{product.today}
+                            {product.today}
                         </p>
 
                         <p className="text-xs text-gray-500">
@@ -173,7 +174,7 @@ const ProductDetails = async ({
 
                     <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
 
-                        
+
                         <div className="rounded-xl border border-gray-300 p-4">
                             <p className="text-xs text-gray-500">
                                 গতকালের দাম
@@ -188,14 +189,14 @@ const ProductDetails = async ({
                             </p>
                         </div>
 
-                        
+
                         <div className="rounded-xl border border-gray-300 p-4">
                             <p className="text-xs text-gray-500">
                                 গত সপ্তাহের দাম
                             </p>
 
                             <p className="mt-1 text-xl font-bold text-red-500">
-                                ৳{product.lastWeek}
+                                {product.lastWeek}
                             </p>
 
                             <p className="text-xs text-gray-500">
@@ -209,7 +210,7 @@ const ProductDetails = async ({
                             </p>
 
                             <p className="mt-1 text-xl font-bold">
-                                ৳{product.lastMonth}
+                                {product.lastMonth}
                             </p>
 
                             <p className="text-xs text-gray-500">
@@ -220,8 +221,8 @@ const ProductDetails = async ({
                     </div>
                 </section>
 
-                
-                <section className="rounded-xl border border-[#e2ebe3] bg-white/80 p-3 sm:p-5">
+
+                <section className="rounded-xl border border-gray-300 bg-white/80 p-3 sm:p-5">
                     <h2 className="mb-4 text-sm font-bold">
                         বাজারভিত্তিক এলাকাভেদে দাম
                     </h2>
@@ -231,7 +232,7 @@ const ProductDetails = async ({
                             <table className="w-full min-w-140 border-collapse text-left text-xs">
 
                                 <thead>
-                                    <tr className="border-y border-[#e5ebe5] text-gray-500">
+                                    <tr className="border-y border-gray-200 text-gray-500">
                                         <th className="px-3 py-3 font-medium">
                                             বাজার
                                         </th>
@@ -257,27 +258,27 @@ const ProductDetails = async ({
                                 <tbody>
                                     {product.markets.map((market, index) => (
                                         <tr
-                                            key={`${market.marketName}-${index}`}
-                                            className="border-b border-gray-200 even:bg-[#f0f5f0] hover:bg-green-50"
+                                            key={`${market.market}-${index}`}
+                                            className="border-b border-gray-200 even:bg-green-50 hover:bg-gray-50"
                                         >
                                             <td className="px-3 py-3 font-medium">
-                                                {market.marketName}
+                                                {market.market}
                                             </td>
 
                                             <td className="px-3 py-3">
                                                 {market.division}
                                             </td>
 
-                                            <td className="px-3 py-3 text-right">
-                                                ৳{market.min}
+                                            <td className="px-3 py-3 text-right flex items-center gap-1">
+                                              {market.min} টাকা
                                             </td>
 
                                             <td className="px-3 py-3 text-right">
-                                                ৳{market.max}
+                                                {market.max} টাকা
                                             </td>
 
                                             <td className="px-3 py-3 text-right font-semibold">
-                                                ৳{market.avg}
+                                                {market.avg} টাকা
                                             </td>
                                         </tr>
                                     ))}
@@ -286,19 +287,19 @@ const ProductDetails = async ({
                             </table>
                         </div>
                     ) : (
-                        <p className="rounded-lg bg-[#f0f5f0] p-4 text-sm text-gray-500">
+                        <p className="rounded-lg bg-gray-50 p-4 text-sm text-gray-500">
                             এই পণ্যের বাজারভিত্তিক দামের তথ্য পাওয়া যায়নি।
                         </p>
                     )}
                 </section>
 
-                {/* Back Button */}
                 <div className="mt-5">
                     <Link
                         href="/"
-                        className="inline-flex items-center gap-2 rounded-lg border border-[#d5e2d6] bg-white px-4 py-2 text-sm font-medium transition hover:bg-green-50"
+                        className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-bold transition hover:bg-green-50 text-green-500 "
                     >
-                        ← আরও পণ্য দেখুন
+                        <FaArrowLeftLong  />
+                        আরও পণ্য দেখুন
                     </Link>
                 </div>
 

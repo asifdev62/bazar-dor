@@ -26,10 +26,10 @@ const Marque = async () => {
     const headlines:Headline[] = await res.json();
     console.log(headlines)
     return (
-        <div className=" w-full overflow-hidden border-y border-gray-200 bg-white">
+        <div className=" w-full min-w-0 overflow-hidden border-y border-gray-200 bg-white">
 
             <MarqueeText direction="right" duration={10}>
-                <div className="flex min-h-10 items-center gap-3 px-3 sm:gap-6 sm:px-4 lg:gap-8">
+                <div className="flex min-h-10 sm:min-h-11 items-center lg:gap-7 gap-3 px-3 sm:gap-6 sm:px-4 ">
                     {
                         headlines.map((headline) => {
                             const isUp = headline.change.dir === "up";
