@@ -17,7 +17,7 @@ interface Product {
 }
 const PriceUpProduct = async () => {
 
-    const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
+    const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products")
 
     const products: Product[] = await res.json();
     console.log(products)
@@ -36,7 +36,7 @@ const PriceUpProduct = async () => {
                         <div className="w-full rounded-6  bg-gray-50 border-b border-green-500 p-2 shadow-sm">
                            
                             <div className="flex items-center gap-4">
-                                <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-[20px] bg-white text-4xl">
+                                <div className="flex h-18 w-18 shrink-0 items-center justify-center rounded-[20px] bg-gray-100 text-4xl">
                                     {product.image}
                                 </div>
 
@@ -62,7 +62,7 @@ const PriceUpProduct = async () => {
                                         টাকা
                                     </h3>
                                     </div>
-                                     <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-red-500">
+                                     <div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-gray-100 px-3 py-2 text-sm font-semibold text-red-500">
                                     <FaArrowUp />
                                     <span>{product.change.pct}</span>
                                     <FaPercentage />

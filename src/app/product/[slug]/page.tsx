@@ -41,7 +41,7 @@ const ProductDetails = async ({
     const { slug } = await params;
 
     const res = await fetch(
-        "https://api.abcz.workers.dev/api/bazardor/products"
+        "https://openapi.programming-hero.com/api/bazardor/products"
     );
 
     if (!res.ok) {
@@ -55,7 +55,7 @@ const ProductDetails = async ({
     if (!product) {
         return (
             <main className="flex min-h-screen items-center justify-center bg-white p-5">
-                <div className="rounded-xl bg-white p-8 text-center shadow-sm">
+                <div className="rounded-xl bg-gray-200 p-8 text-center shadow-sm">
                     <h1 className="text-xl font-bold text-gray-800">
                         পণ্য পাওয়া যায়নি!
                     </h1>
@@ -104,7 +104,7 @@ const ProductDetails = async ({
 
                 <section className="mb-4 flex flex-col justify-between gap-4 rounded-xl border border-gray-300 bg-white/80 p-4 sm:flex-row sm:items-center sm:p-5 b">
                     <div className="flex items-center gap-4">
-                        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-white text-3xl">
+                        <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-gray-100 text-3xl">
                             {product.image || product.categoryIcon}
                         </div>
 
@@ -152,11 +152,11 @@ const ProductDetails = async ({
                         <div className='flex justify-between items-center gap-2 '>
                             <div className='flex items-center'>
                             </div>
-                            {product.change.dir === "up" ? (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-red-600">
+                            {product.change.dir === "up" ? (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-gray-100 px-3 py-2 text-sm font-semibold text-red-600">
                                 <FaArrowUp />
                                 <span>{product.change.pct}</span>
                                 <FaPercentage />
-                            </div>) : (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-white px-3 py-2 text-sm font-semibold text-green-600">
+                            </div>) : (<div className="mb-1 flex shrink-0 items-center gap-2 rounded-full bg-gray-100 px-3 py-2 text-sm font-semibold text-green-600">
                                 <FaArrowDown />
                                 <span>{product.change.pct}</span>
                                 <FaPercentage />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import { connection } from "next/server";
 import UserInfo from "./UserInfo";
+import Link from "next/link";
 
 
 
@@ -14,12 +15,13 @@ const Header =async () => {
   })
 
   return (
-    <header className="w-full px-4 sm:px-6 lg:px-10 xl:px-20">
+    <header className="w-full min-w-0 px-3 sm:px-5 md:px-6 lg:px-10 xl:px-20">
 
-      <div className="flex items-center justify-between gap-3 py-4">
+      <div className="flex main-w-0 items-center justify-between gap-2 py-3 sm:gap-3 sm:py-4">
 
-        <div className="flex min-w-0 items-center gap-2">
+        <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
 
+          <Link href={"/"}>
           <div className="bg-green-700 w-10 h-10 rounded-xl flex shrink-0 items-center justify-center sm:h-12 sm:w-12 sm:rounded-2xl">
             <Image
               src="/logo-icon.png"
@@ -28,6 +30,7 @@ const Header =async () => {
               height={20}
             />
           </div>
+          </Link>
 
           <div className="min-w-0">
             <h2 className="text-base font-bold sm:text-xl ">বাজার দর</h2>
