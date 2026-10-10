@@ -43,7 +43,7 @@ const SignUp = () => {
     }
 
         return (
-            <main className="bg-green-50">
+            <main className="flex min-h-screen items-center justify-center bg-green-50 px-5 py-10">
                 <div className="w-full max-w-md">
 
 
@@ -119,8 +119,8 @@ const SignUp = () => {
                                 type="submit"
                                 className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 py-3.5 font-bold text-white shadow-lg shadow-green-600/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-green-700 hover:shadow-xl active:translate-y-0"
                             >
-                                সাইন
-                                <LiaSignInAltSolid className="transition-transform duration-300 group-hover:translate-x-1" />
+                                সাইন ইন
+                                <LiaSignInAltSolid className="transition-transform duration-300 group-hover:translate-x-1 text-xl" />
                             </button>
 
 
