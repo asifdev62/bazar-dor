@@ -46,7 +46,8 @@ const SignUp = () => {
 
     }
     return (
-        <main className="flex min-h-screen items-center justify-center bg-linear-to-br from-green-50 via-white to-emerald-100 px-4 py-10">
+        <main className="bg-green-50">
+
             <div className="w-full max-w-md">
 
 

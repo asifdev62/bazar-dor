@@ -2,7 +2,6 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { router } from "better-auth/api";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
