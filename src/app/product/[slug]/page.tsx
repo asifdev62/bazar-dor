@@ -232,7 +232,7 @@ const ProductDetails = async ({
                             <table className="w-full min-w-140 border-collapse text-left text-xs">
 
                                 <thead>
-                                    <tr className="border-y border-gray-200 text-gray-500">
+                                    <tr className="border-y border-gray-200 text-gray-500 bg-green-50">
                                         <th className="px-3 py-3 font-medium">
                                             বাজার
                                         </th>
