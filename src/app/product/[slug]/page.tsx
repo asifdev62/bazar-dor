@@ -65,7 +65,7 @@ const ProductDetails = async ({
                         href="/"
                         className="mt-4 inline-block text-sm text-green-700 hover:underline"
                     >
-                        ← হোম পেজে ফিরে যাও
+                        <FaArrowRight /> হোম পেজে ফিরে যাও
                     </Link>
                 </div>
             </main>
