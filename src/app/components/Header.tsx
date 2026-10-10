@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import { connection } from "next/server";
-import Link from "next/link";
+import UserInfo from "./UserInfo";
 
 
 
@@ -36,12 +36,7 @@ const Header =async () => {
           </div>
         </div>
 
-        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
-          <Link href="/signIn" className="px-2 py-1 rounded-sm text-sm sm:px-3 sm:py-2">সাইন ইন</Link>
-
-          <Link href="/signUp" className="bg-green-700 text-white px-2 py-1 rounded-sm text-sm sm:px-3 sm:py-2">সাইন আপ</Link>
-
-        </div>
+       <UserInfo />
       </div>
 
       <div className="w-full">
