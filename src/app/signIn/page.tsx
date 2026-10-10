@@ -50,6 +50,13 @@ const SignUp = () => {
   console.log(data)
     }
 
+     const handleGithubSignUp = async () =>{
+           const data = await authClient.signIn.social({
+        provider: "github",
+      });
+      console.log(data)
+        }
+
     return (
         <main className="flex min-h-screen items-center justify-center bg-green-50 px-5 py-10">
             <div className="w-full max-w-md">
@@ -157,7 +164,7 @@ const SignUp = () => {
                             <span>Google দিয়ে চালিয়ে যান</span>
 
                         </button>
-                        <button className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-2 hover:bg-gray-50 transition">
+                        <button onClick={handleGithubSignUp} className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-lg py-2 hover:bg-gray-50 transition">
                             <FaGithub />
                             <span>GitHub দিয়ে চালিয়ে যান</span>
 

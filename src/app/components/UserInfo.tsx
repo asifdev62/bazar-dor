@@ -17,9 +17,9 @@ const UserInfo = () => {
             {
                 user ? (
                      <Link href={"/components/userProfile"}>
-                        <div className='flex items-center gap-4'>
+                        <div className='flex items-center gap-3'>
                         <div className="avatar">
-                            <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
+                            <div className="w-10 rounded-full ring-2 ring-green-500 ring-offset-2">
                                 {user.image ? (
                                     <Image
                                         src={user.image}
@@ -36,9 +36,12 @@ const UserInfo = () => {
                                    </div>
                                 </div>
 
-                                <h2 className="text-sm font-semibold text-gray-800">
+                               <div>
+                                 <h2 className="text-sm font-semibold text-gray-800">
                                     {user.name}
                                 </h2>
+                                <p className='text-xs text-gray-600'>ব্যবহারকারীর প্রোফাইল</p>
+                               </div>
                                 </div>
                                 </Link>
                            
