@@ -73,27 +73,19 @@ http://localhost:3000
 ## 📁 Project Structure
 
 ```text
-bazar-dor/
-├── public/
-│   └── logo-icon.png
-├── src/
-│   └── app/
-│       ├── components/
-│       │   ├── products/
-│       │   ├── Header.tsx
-│       │   ├── Navbar.tsx
-│       │   ├── Banner.tsx
-│       │   └── Marque.tsx
-│       ├── category/
-│       │   └── [slug]/
-│       ├── product/
-│       │   └── [slug]/
-│       ├── layout.tsx
-│       ├── page.tsx
-│       └── globals.css
-├── package.json
-├── tsconfig.json
-└── README.md
+src/app/
+├── api/auth/[...all]/route.tsx
+├── category/[slug]/page.tsx
+├── components/
+│   ├── products/ (AllProduct, priceDownPro..., PriceUpProduc...)
+│   ├── userProfile/page.tsx      
+│   ├── BanglaDate.tsx, Banner.tsx, Footer.tsx
+│   ├── Header.tsx, Marque.tsx, Navbar.tsx, UserInfo.tsx
+├── product/[slug]/page.tsx
+├── products/page.tsx
+├── signIn/page.tsx
+├── signUp/page.tsx
+├── favicon.ico, globals.css, layout.tsx ...
 ```
 
 *Note: This is an illustrative project structure. Adjust it to match the actual files and folders in your repository.*
