@@ -10,7 +10,7 @@ export default function Home() {
    <main className="min-h-screen w-full min-w-0 overflow-x-clip bg-green-50">
      <div className="bg-green-50">
 
-      <section className="w-full main-w-0">
+      <section className="w-full min-w-0">
             <Suspense>
                <Marque />
             </Suspense>

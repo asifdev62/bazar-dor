@@ -23,8 +23,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-theme="light"
       className={`${notoSerifBengali.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-           <ToastContainer />
+      <body className="min-h-screen w-full overflow-x-clip">
+        <ToastContainer />
         <Suspense>
         <Header></Header>
         </Suspense>
