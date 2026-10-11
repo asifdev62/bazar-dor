@@ -1,36 +1,153 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 বাজার দর (Bazar Dor)
 
-## Getting Started
+### বাংলাদেশের নিত্যপ্রয়োজনীয় পণ্যের দৈনিক বাজারদর
 
-First, run the development server:
+**Bazar Dor** is a modern, responsive web application that helps users explore the prices of everyday essential products in Bangladesh. Users can check product prices, compare price changes, browse products by category, and stay informed about market trends through a clean and user-friendly interface.
+
+🌐 **Live Website:** https://bazar-dor-psi-olive.vercel.app/
+
+---
+
+## ✨ Features
+
+- 🏠 **Modern Homepage** — Clean and user-friendly interface.
+- 📈 **Price Increase Tracking** — Explore products whose prices have increased.
+- 📉 **Price Decrease Tracking** — Find products whose prices have decreased.
+- 🛍️ **All Products** — Browse available essential products in one place.
+- 🗂️ **Category-Based Navigation** — Explore products by categories such as rice, lentils, oil, vegetables, fish, meat, and eggs.
+- 🔍 **Product Details** — View individual product information and price history.
+- 📊 **Price Comparison** — Compare today's prices with previous prices.
+- 🔄 **Market Trend Indicators** — Understand price movements using percentage changes and visual indicators.
+- 📱 **Responsive Design** — Optimized for desktop, tablet, and mobile devices.
+- ⚡ **Optimized Performance** — Built with Next.js for a modern web experience.
+- 🇧🇩 **Bangla Interface** — Designed for Bengali-speaking users.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework |
+| React | User interface |
+| TypeScript | Type safety |
+| Tailwind CSS | Styling and responsive design |
+| React Icons | Icons |
+| REST API | Product and category data |
+| Vercel | Deployment |
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/asifdev62/bazar-dor.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd bazar-dor
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Open in Your Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+bazar-dor/
+├── public/
+│   └── logo-icon.png
+├── src/
+│   └── app/
+│       ├── components/
+│       │   ├── products/
+│       │   ├── Header.tsx
+│       │   ├── Navbar.tsx
+│       │   ├── Banner.tsx
+│       │   └── Marque.tsx
+│       ├── category/
+│       │   └── [slug]/
+│       ├── product/
+│       │   └── [slug]/
+│       ├── layout.tsx
+│       ├── page.tsx
+│       └── globals.css
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*Note: This is an illustrative project structure. Adjust it to match the actual files and folders in your repository.*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔌 API Integration
 
-## Deploy on Vercel
+The application uses REST APIs to retrieve product and category information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Categories API**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+https://api.abcz.workers.dev/api/bazardor/categories
+```
+
+**Products API**
+
+```text
+https://api.abcz.workers.dev/api/bazardor/products
+```
+
+The API provides information used to display product names, categories, units, current prices, historical prices, and price changes.
+
+## 📱 Responsive Design
+
+Bazar Dor is designed to provide a consistent experience across different screen sizes:
+
+- 📱 Mobile phones
+- 📲 Tablets
+- 💻 Laptops
+- 🖥️ Desktop computers
+
+## 🔮 Future Improvements
+
+- 🔎 Search products by name.
+- ↕️ Sort products by price and category.
+- 📍 Show market-specific prices and locations.
+- 📈 Add interactive price history charts.
+- ⭐ Allow users to save favorite products.
+- 🔔 Add notifications for significant price changes.
+- 🗓️ Provide more historical price data.
+
+## 👨‍💻 Developer
+
+**Md Asif Ali**
+
+Full-Stack Web Developer | BSc in Computer Science & Engineering
+
+**Skills:** JavaScript · TypeScript · React · Next.js · Tailwind CSS
+
+- GitHub: [@asifdev62](https://github.com/asifdev62)
+- Live Project: [Bazar Dor](https://bazar-dor-psi-olive.vercel.app/)
+
+---
+
+⭐ If you find this project useful, consider giving it a star on GitHub!
+
+**Bazar Dor — বাজারদর জানুন, সচেতনভাবে বাজার করুন।**
