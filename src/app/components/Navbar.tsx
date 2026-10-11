@@ -15,10 +15,14 @@ const Navbar =async () => {
     console.log(data)
 
     return (
-        <nav className='w-full border-y border-gray-200 max-w-full overflow-x-auto'>
-            <div className="flex w-max min-w-full items-center gap-4 px-3 py-1 sm:gap-6 sm:px-4">
+        <nav className='w-full border-y border-gray-200 '>
+            <div className="mx-auto flex max-w-7xl items-center gap-4 overflow-x-auto
+                   px-4 py-1 sm:gap-6 sm:px-6 lg:justify-center lg:px-8
+                   [scrollbar-none] [&::-webkit-scrollbar]:hidden">
             {
-                data.map(item => <Link key={item.id} href={`/category/${item.slug}`} className='flex shrink-0 items-center gap-1 whitespace-nowrap text-sm font-medium text-gray-700 transition hover:text-green-500 sm:text-base py-1'>
+                data.map(item => <Link key={item.id} href={`/category/${item.slug}`} className='flex shrink-0 items-center gap-1 whitespace-nowrap py-1
+                       text-sm font-medium text-gray-700 transition
+                       hover:text-green-500 sm:text-base'>
                     <span>{item.icon}</span>
                     <span>{item.nameBn}</span>
 

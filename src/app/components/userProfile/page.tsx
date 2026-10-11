@@ -74,7 +74,7 @@ const UserProfilePage = () => {
 
     return (
        <section className="bg-green-50">
-        <Link href={"/"} className="flex items-center gap-2 mx-10 my-5">
+        <Link href={"/"} className="flex items-center gap-2 mx-10 pt-5">
                <ImArrowLeft className="text-green-700" />
                <h2 className="text-green-700 font-bold">Home</h2>
         </Link>

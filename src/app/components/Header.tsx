@@ -1,9 +1,9 @@
 
 import Image from "next/image";
-import Navbar from "./Navbar";
 import { connection } from "next/server";
 import UserInfo from "./UserInfo";
 import Link from "next/link";
+import Navbar from "./Navbar";
 
 
 
@@ -15,9 +15,10 @@ const Header =async () => {
   })
 
   return (
-    <header className="w-full px-3 sm:px-5 md:px-6 lg:px-10 xl:px-20">
+    <header className="w-full ">
 
-      <div className="flex main-w-0 items-center justify-between gap-2 py-3 sm:gap-3 sm:py-4">
+    <div className="px-3 sm:px-5 md:px-6 lg:px-10 xl:px-20">
+        <div className="flex main-w-0 items-center justify-between gap-2 py-3 sm:gap-3 sm:py-4">
 
         <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-3">
 
@@ -41,8 +42,9 @@ const Header =async () => {
 
        <UserInfo />
       </div>
+    </div>
 
-      <div className="w-full">
+      <div>
         <Navbar />
       </div>
     </header>
