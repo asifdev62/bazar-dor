@@ -129,7 +129,7 @@ const SignUp = () => {
                             </div>
                         </div>
 
-                        {/* Phone */}
+                     
                         <div>
                             <label className="mb-2 block text-sm font-semibold text-gray-700">
                                 মোবাইল নম্বর
