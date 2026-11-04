@@ -1,28 +1,62 @@
 # 🛒 Bazar Dor — বাজার দর
 
-### বাংলাদেশের নিত্যপ্রয়োজনীয় পণ্যের দৈনিক বাজারদর
+<div align="center">
 
-**Bazar Dor** is a modern, responsive web application designed to help people in Bangladesh explore and compare the prices of everyday essential products.
+### বাংলাদেশের নিত্যপ্রয়োজনীয় পণ্যের দৈনিক বাজারদর 🇧🇩
 
-Users can browse products by category, track price increases and decreases, view product details, and compare current prices with previous prices through a clean and user-friendly Bangla interface.
+A modern and responsive web application that helps people in Bangladesh explore, track, and compare the prices of everyday essential products.
 
-🌐 **Live Website:** [Bazar Dor](https://bazar-dor-psi-olive.vercel.app/)
+<br />
 
-📦 **GitHub Repository:** [asifdev62/bazar-dor](https://github.com/asifdev62/bazar-dor)
+[🌐 Live Demo](https://bazar-dor-psi-olive.vercel.app/) · [💻 GitHub Repository](https://github.com/asifdev62/bazar-dor)
+
+<br />
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge&logo=fastapi&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+</div>
 
 ---
 
-## 📸 Project Screenshot
+## 🖥️ Homepage Preview
 
-<!-- Replace the image path below with your actual project screenshot. -->
+<div align="center">
 
-<p align="center">
-  <img
-    src="./public/bazar-dor-preview.png"
-    alt="Bazar Dor Homepage Preview"
-    width="100%"
-  />
-</p>
+<img src="./public/bazar-dor-preview.png" alt="Bazar Dor Homepage Preview" width="100%" />
+
+*Bazar Dor — বাজারদর জানুন, সচেতনভাবে বাজার করুন।*
+
+</div>
+
+---
+
+## 📖 About The Project
+
+**Bazar Dor (বাজার দর)** is a modern and responsive web application designed to help people in Bangladesh explore and compare the prices of everyday essential products.
+
+The platform provides a clean and user-friendly Bangla interface where users can browse products by category, track price increases and decreases, view product details, and compare current prices with previous prices.
+
+Bazar Dor aims to make essential market price information more accessible and easier to understand through a simple digital experience.
+
+### 🎯 Project Objectives
+
+- Make everyday product prices easier to explore.
+- Help users understand price increases and decreases.
+- Organize essential products into convenient categories.
+- Present market information through a Bengali interface.
+- Provide a responsive experience across different devices.
+
+### 🔗 Project Links
+
+| Resource | Link |
+|---|---|
+| 🌐 Live Website | [Bazar Dor](https://bazar-dor-psi-olive.vercel.app/) |
+| 💻 Source Code | [GitHub Repository](https://github.com/asifdev62/bazar-dor) |
 
 ---
 
@@ -44,6 +78,12 @@ Users can browse products by category, track price increases and decreases, view
 
 ## 🛠️ Technology Stack
 
+### Frontend
+
+<p>
+  <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind" alt="Frontend Technologies" />
+</p>
+
 | Technology | Purpose |
 |---|---|
 | Next.js | React framework and application routing |
@@ -51,12 +91,24 @@ Users can browse products by category, track price increases and decreases, view
 | TypeScript | Type safety and maintainable code |
 | Tailwind CSS | Styling and responsive layouts |
 | React Icons | Icons and visual elements |
-| REST APIs | Retrieving product and category data |
-| MongoDB | Database integration for authentication, if configured |
-| Better Auth | User authentication, if enabled in the application |
-| Vercel | Application deployment |
 
-> **Note:** The MongoDB and Better Auth entries are relevant only if they are part of the current implementation. Remove them if they are not used by this project.
+### API & Data Integration
+
+| Technology | Purpose |
+|---|---|
+| REST API | Retrieving product and category data |
+| MongoDB | Database integration, if used by the current implementation |
+| Better Auth | User authentication, if enabled in the application |
+
+### Development & Deployment
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" alt="Development Tools" />
+</p>
+
+- Git & GitHub
+- Visual Studio Code
+- Vercel
 
 ---
 
@@ -76,9 +128,16 @@ https://api.abcz.workers.dev/api/bazardor/categories
 https://api.abcz.workers.dev/api/bazardor/products
 ```
 
-The APIs provide the information required to display product names, categories, units, prices, historical prices, and price changes.
+The APIs provide the information required to display:
 
-> API availability and the returned data depend on the API service.
+- Product names
+- Categories
+- Units
+- Current prices
+- Historical prices
+- Price changes
+
+<sub>API availability and returned data depend on the external API service.</sub>
 
 ---
 
@@ -108,27 +167,21 @@ Development dependencies may include:
 - `@types/react-dom` — React DOM type definitions.
 - `typescript` — TypeScript compiler.
 
-**Important:** The lists above describe expected dependencies. Check your `package.json` to confirm the packages and versions actually used by your project.
-
-To install all project dependencies, run:
-
-```bash
-npm install
-```
+*Check your `package.json` for the exact packages and versions used in the project.*
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these steps to run Bazar Dor on your local machine.
+Follow these steps to run Bazar Dor locally.
 
 ### Prerequisites
 
 Make sure you have installed:
 
-- [Node.js](https://nodejs.org/) — A supported LTS version.
-- npm — Included with Node.js.
-- Git — To clone the repository.
+- [Node.js](https://nodejs.org/)
+- npm
+- [Git](https://git-scm.com/)
 
 ### 1. Clone the Repository
 
@@ -152,13 +205,15 @@ npm install
 
 If the project requires environment variables, create a `.env.local` file in the root directory.
 
-For example:
+Add only the variables required by your actual application.
+
+For example, if database integration is configured:
 
 ```env
 MONGODB_URI=your_mongodb_connection_string
 ```
 
-Add only the environment variables required by your actual application. If your project does not require a MongoDB connection, you do not need this variable.
+If the application does not require a MongoDB connection, this variable is not needed.
 
 **Security:** Never commit real API keys, database credentials, or authentication secrets to GitHub.
 
@@ -180,22 +235,26 @@ The application should now be available on your local machine.
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-The following is an illustrative overview of the application structure. Update it to match the actual files in your repository.
+The following is an illustrative overview of the application structure.
 
 ```text
 bazar-dor/
+│
 ├── public/
 │   └── images/
+│
 ├── src/
 │   └── app/
 │       ├── api/
 │       │   └── auth/
 │       │       └── [...all]/
+│       │
 │       ├── category/
 │       │   └── [slug]/
 │       │       └── page.tsx
+│       │
 │       ├── components/
 │       │   ├── products/
 │       │   ├── BanglaDate.tsx
@@ -205,18 +264,24 @@ bazar-dor/
 │       │   ├── Marque.tsx
 │       │   ├── Navbar.tsx
 │       │   └── UserInfo.tsx
+│       │
 │       ├── product/
 │       │   └── [slug]/
 │       │       └── page.tsx
+│       │
 │       ├── products/
 │       │   └── page.tsx
+│       │
 │       ├── signIn/
 │       │   └── page.tsx
+│       │
 │       ├── signUp/
 │       │   └── page.tsx
+│       │
 │       ├── globals.css
 │       ├── layout.tsx
 │       └── page.tsx
+│
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
@@ -225,16 +290,38 @@ bazar-dor/
 └── next.config.ts
 ```
 
+*The structure is based on the provided project overview. Update it if your actual repository structure changes.*
+
 ---
 
 ## 📱 Responsive Design
 
 Bazar Dor is designed to provide a consistent browsing experience across different devices.
 
-- 📱 Mobile phones
+- 📱 Mobile Phones
 - 📲 Tablets
 - 💻 Laptops
-- 🖥️ Desktop computers
+- 🖥️ Desktop Computers
+
+---
+
+## 🌐 Deployment
+
+Bazar Dor is deployed using **Vercel**.
+
+<details>
+<summary><strong>Deployment Checklist</strong></summary>
+
+1. Push the latest source code to GitHub.
+2. Import the repository into Vercel.
+3. Configure required environment variables.
+4. Build and deploy the application.
+5. Verify API connectivity.
+6. Test the production website on different devices.
+
+</details>
+
+**Live Website:** [https://bazar-dor-psi-olive.vercel.app/](https://bazar-dor-psi-olive.vercel.app/)
 
 ---
 
@@ -252,26 +339,55 @@ Potential improvements for future versions include:
 
 ---
 
+## 🎯 What I Learned
+
+Through this project, I gained practical experience with:
+
+- Building modern web applications using Next.js.
+- Developing responsive interfaces with React and Tailwind CSS.
+- Writing maintainable code using TypeScript.
+- Integrating external REST APIs.
+- Displaying dynamic product information.
+- Organizing products into categories.
+- Presenting price changes and comparisons.
+- Deploying applications using Vercel.
+
+---
+
 ## 👨‍💻 Developer
 
-**Md Asif Ali**
+<div align="center">
 
-Full-Stack Web Developer | Computer Science & Engineering
+### Md Asif Ali
 
-**Technologies:** JavaScript · TypeScript · React.js · Next.js · Tailwind CSS
+**Full-Stack Web Developer | Computer Science & Engineering**
 
-- 💻 GitHub: [@asifdev62](https://github.com/asifdev62)
-- 🌐 Portfolio: [Bazar Dor — Live Website](https://bazar-dor-psi-olive.vercel.app/)
-- 📦 Repository: [Bazar Dor on GitHub](https://github.com/asifdev62/bazar-dor)
+JavaScript · TypeScript · React.js · Next.js · Tailwind CSS
+
+<br />
+
+<a href="https://github.com/asifdev62">
+  <img src="https://img.shields.io/badge/GitHub-asifdev62-181717?style=for-the-badge&logo=github" alt="GitHub" />
+</a>
+
+<br />
+
+[GitHub Profile](https://github.com/asifdev62) · [Portfolio](https://myportfolio-eight-orcin-18.vercel.app/) · [Bazar Dor Live Website](https://bazar-dor-psi-olive.vercel.app/)
+
+</div>
 
 ---
 
-## ⭐ Support
+<div align="center">
 
-If you find this project useful, consider giving the repository a star on GitHub!
+### 🛒 Bazar Dor — বাজার দর
 
----
+**বাজারদর জানুন, সচেতনভাবে বাজার করুন। 🇧🇩**
 
-<p align="center">
-  <strong>Bazar Dor — বাজারদর জানুন, সচেতনভাবে বাজার করুন। 🇧🇩</strong>
-</p>
+Built with ❤️ by Asif Ali
+
+<br />
+
+[🌐 Live Demo](https://bazar-dor-psi-olive.vercel.app/) · [💻 GitHub Repository](https://github.com/asifdev62/bazar-dor)
+
+</div>
